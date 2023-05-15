@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Outward";
+  src: url("outward-round-webfont.woff2") format("woff2");
+}
+* {
+	margin: 0px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+body {
+	background: lime;
+	background-size: cover;
+}
+
+.marquee {
+  position: relative;
+  display: flex;
+  height: 80px;
+  user-select: none;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.marquee__group {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-width: 100%;
+  animation: scroll 50s linear infinite;
+}
+
+.marquee__group span {
+  color: black;
+  font-size: 150px;
+  font-weight: 100;
+  white-space: nowrap;
+  font-family: 'Outward', monospace !important;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 30px));
+  }
+}
+
+#laptop {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 406px;
+  left: 508px;
+}
+
+#laptop:hover {
+  scale: 120%;
+}
+
+#sketchbook {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 221px;
+  left: 549px;
+}
+
+#sketchbook:hover {
+  scale: 120%;
+}
+
+#waterbottle {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 209px;
+  left: 843px;
+}
+
+#waterbottle:hover {
+  scale: 120%;
+}
+
+#pens {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 341px;
+  left: 784px;
+}
+
+#pens:hover {
+  scale: 120%;
+}
+
+#headphones {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 443px;
+  left: 820px;
+}
+
+#headphones:hover {
+  scale: 120%;
+}
+
