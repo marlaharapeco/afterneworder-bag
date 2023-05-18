@@ -39,7 +39,7 @@ body {
   font-size: 150px;
   font-weight: 100;
   white-space: nowrap;
-  font-family: 'Outward', monospace !important;
+  font-family: 'Outward', monospace;
 }
 
 @keyframes scroll {
@@ -51,63 +51,31 @@ body {
   }
 }
 
-#laptop {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 406px;
-  left: 508px;
+.columns {
+  width: 100%; 
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
-#laptop:hover {
-  scale: 120%;
+.column-1 {
+  padding: 10px;
 }
 
-#sketchbook {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 221px;
-  left: 549px;
+p {
+  font-family: 'Outward', monospace;
+  color: black;
+  font-size: 50px;
+  font-weight: 20;
+  font-stretch: ultra-expanded;
 }
 
-#sketchbook:hover {
-  scale: 120%;
+.column-1:hover {
+  background-color: darkorange;
+  transition: background-color 0.5s ease-in 20ms;
 }
 
-#waterbottle {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  top: 209px;
-  left: 843px;
+.column-item:hover {
+  background-color: darkorange;
+  transition: background-color 0.5s ease-in 20ms;
 }
-
-#waterbottle:hover {
-  scale: 120%;
-}
-
-#pens {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  top: 341px;
-  left: 784px;
-}
-
-#pens:hover {
-  scale: 120%;
-}
-
-#headphones {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  top: 443px;
-  left: 820px;
-}
-
-#headphones:hover {
-  scale: 120%;
-}
-
